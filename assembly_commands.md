@@ -37,3 +37,10 @@ To see the effects of kmer size on genome assembly we will assemble the raw read
 
 #### Normal Assembly
 `staphb_toolkit spades -1 <read1> -2 <read2> -o spades_assembly`
+
+## Checking Assembly Quality
+To generate the assembly quality statistics you can use the program QUAST with the following command:  
+`staphb_toolkit quast <assembly.fasta> -o quast_results`
+
+You can then view the results in the terminal using the following command:  
+`cat quast_results/report.txt`
