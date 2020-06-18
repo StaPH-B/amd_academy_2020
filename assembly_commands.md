@@ -11,7 +11,7 @@ In this section we will use bwa and minimap2 to map reads to a couple reference 
 * Then we can map the reads to the reference sequence  
 `staphb-tk bwa mem <reference_sequence> <read1> <read2> -o genome_mapping.sam`  
 
-* Once the reads are mapped we need to convert it to a bam to look at the mapping statistics
+* Once the reads are mapped we need to convert it to a bam to look at the mapping statistics  
 `staphb-tk samtools view -b genome_mapping.sam -o genome_mapping.bam`  
 
 * Then we need to sort the bam file  
